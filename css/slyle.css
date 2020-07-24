@@ -477,4 +477,39 @@ template {
   line-height: 18px;
   color: #333333;
 }
+
+@media (max-width: 1200px) {
+  .container {
+    max-width: 960px;
+  }
+}
+
+@media (max-width: 992px) {
+  .container {
+    max-width: 700px;
+  }
+  .navbar__search {
+    margin-left: auto;
+  }
+  .navbar-top {
+    padding: 30px 0px;
+  }
+  .navbar-menu {
+    padding: 22px 0px;
+  }
+  .search__input {
+    width: 340px;
+  }
+}
+
+@media (max-width: 678px) {
+  .container {
+    max-width: 570px;
+    width: 92%;
+  }
+  .navbar-menu__link {
+    font-size: 12px;
+    line-height: 15px;
+  }
+}
 /*# sourceMappingURL=slyle.css.map */
