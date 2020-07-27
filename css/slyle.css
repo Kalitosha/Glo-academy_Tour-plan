@@ -824,7 +824,7 @@ template {
 .map {
   width: 347px;
   height: 213px;
-  background: pink;
+  background: gray;
 }
 
 @media (max-width: 1200px) {
