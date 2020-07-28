@@ -28,11 +28,10 @@ body {
   margin: auto;
 }
 
-.image img {
+.image {
   max-width: 100%;
   -o-object-fit: cover;
      object-fit: cover;
-  width: 100%;
 }
 
 /*! normalize.css v8.0.1 | MIT License | github.com/necolas/normalize.css */
@@ -840,7 +839,6 @@ template {
   border: 0;
   allowfullscreen: "";
   aria-hidden: "false";
-  tabindex: "0";
 }
 
 @media (max-width: 1200px) {
