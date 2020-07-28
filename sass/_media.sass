@@ -43,6 +43,11 @@
 	.map
 		width: 48.5% //340px
 
+	.newsletter
+		padding: 92px 0 93px 0
+		&-wrapper
+			max-width: 740px
+
 @media (max-width: 768px)
 	.container
 		max-width: 570px
@@ -87,6 +92,22 @@
 	.slider
 		height: 350px
 
+	.newsletter
+		padding: 76px 0 83px 0
+		&__title
+			margin-bottom: 37px
+		&-wrapper
+			flex-direction: column
+			align-items: flex-start
+			max-width: 570px
+			width: 92%
+		&-title
+			font-size: 20px;
+			line-height: 25px;
+			&__strong
+				font-size: 30px;
+				line-height: 38px;
+
 @media (max-width: 576px)
 	.logo
 		width: 99px
@@ -103,6 +124,17 @@
 	.map
 		width: 100%
 		margin-top: 20px
+
+	.newsletter
+		&-title
+			&__strong
+				font-size: 30px;
+				line-height: 38px;
+
+	.subscribe
+		max-width: 100%
+		min-width: 200px
+		border: blue 5px
 
 @media (max-width: 400px)
 	.hotel
