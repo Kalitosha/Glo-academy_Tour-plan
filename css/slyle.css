@@ -481,8 +481,6 @@ template {
   width: 40px;
   height: 40px;
   border-radius: 50%;
-  -o-object-fit: cover;
-     object-fit: cover;
 }
 
 .user__name {
@@ -634,8 +632,6 @@ template {
 .hotel-slider__image {
   height: 100%;
   width: 100%;
-  -o-object-fit: cover;
-     object-fit: cover;
 }
 
 .hotel-slider__button {
@@ -1044,8 +1040,6 @@ template {
   width: 90px;
   height: 90px;
   border-radius: 50%;
-  -o-object-fit: cover;
-     object-fit: cover;
   margin-bottom: 9px;
 }
 
