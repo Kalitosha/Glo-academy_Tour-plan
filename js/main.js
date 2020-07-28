@@ -23,3 +23,5 @@ let reviewsSlider = new Swiper(".reviews-slider", {
 		onlyInViewport: true,
 	},
 })
+
+$(".parallax-window").parallax({ imageSrc: "../img/newsletter-bg.jpg" })
