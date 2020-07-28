@@ -1,8 +1,8 @@
-let mySwiper = new Swiper(".swiper-container-1", {
+let hotelSlider = new Swiper(".hotel-slider", {
 	loop: true,
 	navigation: {
-		nextEl: ".slider-button_next-1",
-		prevEl: ".slider-button_prev-1",
+		nextEl: ".hotel-slider__button_next",
+		prevEl: ".hotel-slider__button_prev",
 	},
 
 	keyboard: {
@@ -11,12 +11,11 @@ let mySwiper = new Swiper(".swiper-container-1", {
 	},
 })
 
-//второй стайдер добавлен для примера, он работает отдельно от первого и с клавиатуры и кликом мыши
-let mySwiper2 = new Swiper(".swiper-container-2", {
+let reviewsSlider = new Swiper(".reviews-slider", {
 	loop: true,
 	navigation: {
-		nextEl: ".slider-button_next-2",
-		prevEl: ".slider-button_prev-2",
+		nextEl: ".reviews-slider__button_next",
+		prevEl: ".reviews-slider__button_prev",
 	},
 
 	keyboard: {
