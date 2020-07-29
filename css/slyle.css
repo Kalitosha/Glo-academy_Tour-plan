@@ -34,6 +34,10 @@ body {
      object-fit: cover;
 }
 
+.star {
+  margin-right: 3px;
+}
+
 /*! normalize.css v8.0.1 | MIT License | github.com/necolas/normalize.css */
 /* Document
    ========================================================================== */
@@ -664,6 +668,9 @@ template {
 .stars {
   -ms-flex-preferred-size: 100%;
       flex-basis: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
 }
 
 .offer {
@@ -1090,10 +1097,6 @@ template {
   text-align: justify;
   color: #333333;
   margin: auto;
-}
-
-.star {
-  margin-right: 3px;
 }
 
 .activities {
