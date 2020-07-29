@@ -844,6 +844,7 @@ template {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  height: 260px;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
@@ -1424,6 +1425,9 @@ template {
   .map {
     width: 100%;
     margin-top: 20px;
+  }
+  .newsletter {
+    height: 319px;
   }
   .newsletter-title__strong {
     font-size: 30px;
