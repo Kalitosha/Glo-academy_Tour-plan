@@ -1566,16 +1566,20 @@ template {
         flex-basis: 48%;
   }
   .footer__logo {
+    width: 104px;
+    height: 120px;
     -ms-grid-row: 1;
     -ms-grid-row-span: 1;
     grid-row: 1/2;
     grid-column: span 2;
   }
   .footer__social-network {
+    -ms-grid-column-align: center;
+        justify-self: center;
     -ms-grid-row: 1;
     -ms-grid-row-span: 1;
     grid-row: 1/2;
-    grid-column: span 4;
+    grid-column: span 3;
     -ms-flex-item-align: center;
         -ms-grid-row-align: center;
         align-self: center;
@@ -1779,6 +1783,8 @@ template {
     grid-column: 1;
   }
   .footer__social-network {
+    -ms-grid-column-align: start;
+        justify-self: start;
     -ms-flex-wrap: wrap;
         flex-wrap: wrap;
     -ms-grid-row: 2;
