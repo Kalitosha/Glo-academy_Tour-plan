@@ -10,6 +10,10 @@
 		width: 230px
 		height: 230px
 
+	.footer
+		&__input
+			flex-basis: 100%
+
 @media (max-width: 992px)
 	.container
 		max-width: 700px
@@ -47,13 +51,9 @@
 	.map
 		width: 48.5% //340px
 
-	.parallax-window 
-		// padding: 92px 0 93px 0
 	.newsletter
 		padding: 92px 0 93px 0
 		&-wrapper
-			// min-width: 740px
-			//width: 700px
 			max-width: 700px
 			margin: 34 auto			
 
@@ -85,10 +85,41 @@
 		width: 339px
 		height: 255px
 		
+	.footer
+		&-wrapper
+			// grid-template-columns: repeat(6, 1fr)			
+			grid-template-columns: 1fr 0.5fr 1.5fr 1fr 1fr 1fr
+			grid-row-gap: 38px
+		&__input
+			flex-basis: 48%
+		&__logo
+			grid-row: 1/2
+			grid-column: span 2
+		&__social
+			&-network
+				grid-row: 1/2
+				grid-column: span 4
+				align-self: center
+		&__categories
+			grid-row: 2/3
+			grid-column: span 2
+		&__additional
+			justify-self: center;
+			grid-column: span 2
+		&__legal
+			justify-self: center;
+			grid-column: span 2
+		&__contact
+			&-details
+				grid-column: span 5
+				grid-row: 3
+			&-form
+				grid-column: span 5
+				grid-row: 4
 
 @media (max-width: 768px)
 	.container
-		max-width: 570px
+		max-width: 690px //570px
 		width: 92%
 	.navbar	
 		&__search, &-menu, &__user
@@ -133,16 +164,13 @@
 				height: 350px
 
 	.parallax-window 
-		// padding: 76px 0 83px 0
 	.newsletter
-		// min-width: 700px
 		padding: 76px 0 83px 0
 		&__title
 			margin-bottom: 37px
 		&-wrapper
 			flex-direction: column
 			align-items: flex-start
-			// min-width: 280px			
 			margin: 20px auto
 			max-width: 570px 
 			width: 92% 
@@ -186,6 +214,75 @@
 		width: 48%
 		height: 255px
 
+	.footer
+		&-wrapper
+			grid-gap: 10px
+		&__input
+			flex-basis: 100%
+		&__title
+			font-size: 16px
+
+@media (max-width: 600px)
+	.footer
+		padding-top: 69px
+		padding-bottom: 21px
+		&-wrapper
+			grid-template-columns: 1fr	
+			grid-gap: 20px;
+		&__title
+			margin-top: 10px
+			font-size: 18px
+			&_inline
+				flex-basis: 100%				
+				margin-bottom: 20px
+				margin-top: 10px
+			&_mb-30
+				margin-bottom: 40px
+		&__form
+			&-info
+				flex-basis: 100%
+				margin-bottom: 15px
+		&__logo
+			width: 104px
+			height: 120px
+			grid-row: 1
+			grid-column: 1
+		&__social
+			&-network
+				flex-wrap: wrap;
+				grid-row: 2
+				grid-column: 1
+				align-self: center
+		&__additional
+			justify-self: start
+			grid-row: 3
+			grid-column: 1
+		&__categories
+			grid-row: 4
+			grid-column: 1
+		&__legal
+			justify-self: start
+			grid-row: 5
+			grid-column: 1
+		&__contact
+			&-details
+				margin-top: 10px
+				grid-row: 6
+				grid-column: 1
+			&-form
+				grid-row: 7
+				grid-column: 1
+		&__button
+			order: 1
+		&__info
+			margin-top: 30px
+
+		.info
+			&-wrapper
+				flex-direction: column;
+			&__text
+				margin-bottom: 10px
+
 @media (max-width: 576px)
 	.logo
 		width: 99px
@@ -204,8 +301,6 @@
 		width: 100%
 		margin-top: 20px
 
-	.parallax-window 
-		// height: 319px
 	.newsletter
 		height: 319px
 		&-title
@@ -231,6 +326,9 @@
 	.card
 		width: 100%
 		min-width: 280px
+
+				
+	
 
 @media (max-width: 400px)
 	.hotel
