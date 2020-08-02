@@ -1,1 +1,13 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" width="16" height="16"><path style="fill:#333333;" fill-rule="evenodd" d="M3.72 3.72a.75.75 0 011.06 0L8 6.94l3.22-3.22a.75.75 0 111.06 1.06L9.06 8l3.22 3.22a.75.75 0 11-1.06 1.06L8 9.06l-3.22 3.22a.75.75 0 01-1.06-1.06L6.94 8 3.72 4.78a.75.75 0 010-1.06z"></path></svg>
+<svg width="16" height="11" xmlns="http://www.w3.org/2000/svg">
+ <!-- Created with SVG Editor - http://github.com/mzalive/SVG Editor/ -->
+
+ <g>
+  <title>background</title>
+  <rect x="-1" y="-1" width="18" height="13" id="canvas_background" fill="#ffffff"/>
+ </g>
+ <g>
+  <title>Layer 1</title>
+  <line stroke="#333333" fill="none" x1="-0.240617" y1="-0.221377" x2="17.052364" y2="11.846377" id="svg_1" stroke-linejoin="undefined" stroke-linecap="undefined" transform="rotate(2.3863139152526855 8.405873298645025,5.812500000000017) "/>
+  <line stroke="#333333" fill="none" x1="-0.013349" y1="-1.66188" x2="15.667335" y2="12.888779" id="svg_3" stroke-linejoin="undefined" stroke-linecap="undefined" transform="rotate(99.72111511230469 7.826993465423584,5.613449573516845) "/>
+ </g>
+</svg>

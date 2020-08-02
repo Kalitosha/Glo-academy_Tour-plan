@@ -32,9 +32,6 @@
 
 					<button class="menu-button navbar-top__menu-button">
 						<img class="image menu-button__image" src="img/three-bars.svg" alt="Icon: burger menu" />
-
-						<!-- <img class="image menu-button__image menu-button__image_x" src="img/x.svg" alt="Icon: Close menu" /> -->
-					</button>
 				</div>
 				<!-- /.navbar-top -->
 			</div>
@@ -222,8 +219,8 @@
 					<span class="newsletter-title__strong">Newsletter</span>
 				</h2>
 
-				<form action="#" class="subscribe newsletter__subscribe">
-					<input type="text" class="subscribe__input" placeholder="Your email address" />
+				<form action="php/send.php" method="POST" class="subscribe newsletter__subscribe">
+					<input type="text" name="email" class="subscribe__input" placeholder="Your email address" />
 					<button class="subscribe__button">Send</button>
 				</form>
 			</div>
@@ -255,10 +252,11 @@
 								</div>
 								<!-- /.reviews-slider__profile -->
 								<p class="reviews-slider__text">
-									It was very nice hotel with cleanliness. Staff behavior was good and polite. They welcome us very well. Issue was only that Lift was
-									not in working and we were allotted to 3rd floor and amenities articles were in corner of gallery which were giving bad feeling.
-									Breakfast was good and support of the staff was also very nice. Location is not good as per atmosphere, it is very nearby most of
-									the popular places but self location in a narrow street is not good. Overall it was a good experience and could recommend.
+									It was very nice hotel with cleanliness. Staff behavior was good and polite. They welcome us very well. Issue
+									was only that Lift was not in working and we were allotted to 3rd floor and amenities articles were in corner of
+									gallery which were giving bad feeling. Breakfast was good and support of the staff was also very nice. Location
+									is not good as per atmosphere, it is very nearby most of the popular places but self location in a narrow street
+									is not good. Overall it was a good experience and could recommend.
 								</p>
 							</div>
 							<!-- /.reviews-slider__item -->
@@ -303,8 +301,9 @@
 								</div>
 								<!-- /.reviews-slider__profile -->
 								<p class="reviews-slider__text">
-									It was very nice hotel with cleanliness. Location is not good as per atmosphere, it is very nearby most of the popular places but
-									self location in a narrow street is not good. Overall it was a good experience and could recommend.
+									It was very nice hotel with cleanliness. Location is not good as per atmosphere, it is very nearby most of the
+									popular places but self location in a narrow street is not good. Overall it was a good experience and could
+									recommend.
 								</p>
 							</div>
 							<!-- /.reviews-slider__item -->
@@ -430,9 +429,15 @@
 					<div class="footer__social-network">
 						<h3 class="footer__title footer__title_inline">Social network</h3>
 						<div class="footer__social-links">
-							<a href="https://ru-ru.facebook.com/" class="footer__link"><img src="img/facebook.svg" alt="Icon: facebook" class="image" /></a>
-							<a href="https://www.youtube.com/" class="footer__link"><img src="img/youtube.svg" alt="Icon: youtube" class="image" /></a>
-							<a href="https://www.instagram.com/" class="footer__link"><img src="img/instagram.svg" alt="Icon: instagram" class="image" /></a>
+							<a href="https://ru-ru.facebook.com/" class="footer__link"
+								><img src="img/facebook.svg" alt="Icon: facebook" class="image"
+							/></a>
+							<a href="https://www.youtube.com/" class="footer__link"
+								><img src="img/youtube.svg" alt="Icon: youtube" class="image"
+							/></a>
+							<a href="https://www.instagram.com/" class="footer__link"
+								><img src="img/instagram.svg" alt="Icon: instagram" class="image"
+							/></a>
 						</div>
 						<!-- /.footer__social-links -->
 					</div>
@@ -490,10 +495,10 @@
 					<!-- /.footer__contact-details -->
 					<div class="footer__contact-form">
 						<h3 class="footer__title footer__title_mb-30">Send us a message</h3>
-						<form action="#" class="footer__form">
-							<input type="text" class="input footer__input" placeholder="Your Full Name*" />
-							<input type="text" class="input footer__input" placeholder="Phone Number*" />
-							<textarea class="footer__textarea" placeholder="Message"></textarea>
+						<form action="php/send.php" method="POST" class="footer__form">
+							<input type="text" name="name" class="input footer__input" placeholder="Your Full Name*" />
+							<input type="text" name="phone" class="input footer__input" placeholder="Phone Number*" />
+							<textarea name="message" class="footer__textarea" placeholder="Message"></textarea>
 							<button class="button footer__button">Send</button>
 							<span class="footer__form-info">* Required Fields</span>
 						</form>

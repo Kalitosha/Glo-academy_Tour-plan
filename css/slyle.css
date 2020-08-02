@@ -498,8 +498,13 @@ template {
   color: #333333;
 }
 
-.menu-button__image_x {
-  background-image: url(img/x.svg);
+.menu-button {
+  outline: none;
+  border: none;
+}
+
+.menu-button:focus {
+  outline: none;
 }
 
 .breadcrumb-list {
@@ -1693,6 +1698,10 @@ template {
     border: none;
     background: none;
     cursor: pointer;
+    outline: none;
+  }
+  .navbar-top__menu-button:focus {
+    outline: none;
   }
   .navbar-top__menu__image {
     width: 16px;
