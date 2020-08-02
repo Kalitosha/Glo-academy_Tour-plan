@@ -34,6 +34,18 @@ $(".parallax-window").parallax({
 // мобильное меню
 let menuButton = document.querySelector(".menu-button")
 menuButton.addEventListener("click", () => {
-	console.log("click")
 	document.querySelector(".navbar-menu").classList.toggle("navbar-menu_visible")
+
+	let srcImage = document.querySelector(".menu-button__image").src
+
+	if (srcImage === window.location.href.toString() + "img/three-bars.svg") {
+		changeImage("img/x.svg")
+	} else if (srcImage === window.location.href.toString() + "img/x.svg") {
+		changeImage("img/three-bars.svg")
+	}
 })
+
+function changeImage(pathImg) {
+	console.log("click:", pathImg)
+	document.querySelector(".menu-button__image").src = pathImg
+}

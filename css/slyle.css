@@ -498,6 +498,10 @@ template {
   color: #333333;
 }
 
+.menu-button__image_x {
+  background-image: url(img/x.svg);
+}
+
 .breadcrumb-list {
   list-style: none;
   display: -webkit-box;
@@ -1672,9 +1676,11 @@ template {
   }
   .navbar-menu__item_mob_visible {
     display: block;
+    margin-bottom: 39px;
   }
   .navbar-menu_visible {
     display: block;
+    overflow-y: scroll;
   }
   .navbar-top__menu-button {
     display: -webkit-box;
@@ -1696,6 +1702,11 @@ template {
     color: white;
     margin-left: 0px;
     margin-top: 10px;
+    margin-bottom: 7px;
+  }
+  .search__input {
+    width: 100%;
+    max-width: 245px;
   }
   .stars {
     -ms-flex-preferred-size: inherit;
