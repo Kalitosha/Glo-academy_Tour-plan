@@ -1,3 +1,4 @@
+// первый слайдер
 let hotelSlider = new Swiper(".hotel-slider", {
 	loop: true,
 	navigation: {
@@ -11,6 +12,7 @@ let hotelSlider = new Swiper(".hotel-slider", {
 	},
 })
 
+// второй слайдер
 let reviewsSlider = new Swiper(".reviews-slider", {
 	loop: true,
 	navigation: {
@@ -24,6 +26,14 @@ let reviewsSlider = new Swiper(".reviews-slider", {
 	},
 })
 
+// параллакс в newsletter
 $(".parallax-window").parallax({
 	imageSrc: "img/newsletter-bg.jpg",
+})
+
+// мобильное меню
+let menuButton = document.querySelector(".menu-button")
+menuButton.addEventListener("click", () => {
+	console.log("click")
+	document.querySelector(".navbar-menu").classList.toggle("navbar-menu_visible")
 })
