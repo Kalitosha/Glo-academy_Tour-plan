@@ -25,7 +25,7 @@ function sendEmail($email)
 	<b>Почта:</b> $email<br>
 	";
 
-	send($title, $body);
+	send($title, $body, "Location: ../thanks.html");
 }
 
 
@@ -40,11 +40,11 @@ function sendFooterForm($name, $phone, $message)
 	<b>Сообщение:</b><br>$message
 	";
 
-	send($title, $body);
+	send($title, $body, "Location: ../thank-you.html");
 }
 
 
-function send($title, $body)
+function send($title, $body, $trigger)
 {
 	// Настройки PHPMailer
 	$mail = new PHPMailer\PHPMailer\PHPMailer();
@@ -59,8 +59,8 @@ function send($title, $body)
 
 		// Настройки вашей почты
 		$mail->Host       = 'ssl://smtp.mail.ru'; // SMTP сервера вашей почты
-		//логин
-		//пароль
+		//
+		//
 		$mail->SMTPSecure = 'ssl';
 		$mail->Port       = 465;
 		$mail->setFrom('ma-bur@mail.ru', 'Best Tour Plan'); // Адрес самой почты и имя отправителя
@@ -87,5 +87,6 @@ function send($title, $body)
 
 	// Отображение результата
 	// echo json_encode(["result" => $result, "status" => $status]);
-	header('Location: ../thank-you.html');
+
+	header($trigger);
 }

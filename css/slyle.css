@@ -532,6 +532,7 @@ template {
 
 .navbar-menu__item_mob_visible {
   display: none;
+  width: 80%;
 }
 
 .logo {
@@ -549,7 +550,7 @@ template {
 }
 
 .search__input {
-  width: 350px;
+  width: 100%;
   height: 100%;
   padding-left: 23px;
   padding-right: 75px;
@@ -1065,6 +1066,7 @@ template {
   font-weight: bold;
   font-size: 12px;
   line-height: 15px;
+  cursor: pointer;
 }
 
 .reviews {
@@ -1553,7 +1555,6 @@ template {
   opacity: 0;
   -webkit-transition: opacity 0.5s;
   transition: opacity 0.5s;
-  overflow-y: scroll;
 }
 
 .modal__dialog_visible {
@@ -1626,9 +1627,6 @@ template {
   .navbar-menu__link {
     font-size: 12px;
     line-height: 15px;
-  }
-  .search__input {
-    width: 340px;
   }
   .hotel-grid {
     -webkit-box-orient: vertical;
@@ -1811,7 +1809,6 @@ template {
   }
   .navbar-menu_visible {
     display: block;
-    overflow-y: scroll;
   }
   .navbar-top__menu-button {
     display: -webkit-box;
@@ -1838,10 +1835,6 @@ template {
     margin-left: 0px;
     margin-top: 10px;
     margin-bottom: 7px;
-  }
-  .search__input {
-    width: 100%;
-    max-width: 245px;
   }
   .stars {
     -ms-flex-preferred-size: inherit;
@@ -2108,7 +2101,7 @@ template {
     width: 100%;
   }
   .modal__dialog {
-    width: 80%;
+    width: 90%;
   }
   .modal__title {
     font-size: 16px;
@@ -2129,6 +2122,18 @@ template {
   .map {
     width: 100%;
     height: 210px;
+  }
+}
+
+@media (max-height: 583px) {
+  .navbar-menu_visible {
+    overflow-y: scroll;
+  }
+}
+
+@media (max-height: 422px) {
+  .modal__dialog {
+    overflow-y: scroll;
   }
 }
 /*# sourceMappingURL=slyle.css.map */

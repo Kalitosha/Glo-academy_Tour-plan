@@ -33,7 +33,7 @@
 
 	.search
 		&__input
-			width: 340px
+			// width: 340px
 	
 	.hotel
 		&-grid
@@ -167,7 +167,6 @@
 						margin-bottom: 39px
 			&_visible
 				display: block
-				overflow-y: scroll
 		&-top
 			&__menu
 				&-button
@@ -196,8 +195,8 @@
 
 	.search
 		&__input
-			width: 100%;
-			max-width: 245px;
+			// width: 100%;
+			// max-width: 245px;
 
 	.stars
 		flex-basis: inherit
@@ -397,7 +396,7 @@
 
 	.modal
 		&__dialog
-			width: 80%
+			width: 90%
 		&__title
 			font-size: 16px
 		&__button
@@ -419,3 +418,15 @@
 	// .footer
 	// 	&__textarea
 	// 		width: 250px
+
+@media (max-height: 583px)
+	.navbar
+		&-menu
+			&_visible
+				overflow-y: scroll
+
+
+@media (max-height: 422px)
+	.modal
+		&__dialog
+			overflow-y: scroll
