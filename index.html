@@ -14,7 +14,7 @@
 		<header class="navbar navbar_mob-fixed">
 			<div class="container">
 				<div class="navbar-top">
-					<a href="#" class="logo">
+					<a href="index.html" class="logo">
 						<img src="img/horizontal-logo.svg" alt="Logo: Best Tour Plan" class="image logo__image" />
 					</a>
 
@@ -194,7 +194,7 @@
 								</a>
 							</div>
 							<!-- /.booking__call-center -->
-							<button class="button booking__button">View Other Options</button>
+							<button class="button booking__button" data-toggle="modal" data-href="#booking-modal" >View Other Options</button>
 						</div>
 						<!-- /.booking -->
 						<div class="map">
@@ -327,14 +327,14 @@
 					<div class="card activities__card">
 						<img src="img/activity-1.jpg" alt="The curious corner of chamarel" class="image card__image" />
 						<h3 class="card__title">The curious corner of chamarel</h3>
-						<button class="card__button">Book Now</button>
+						<button class="card__button" data-toggle="modal" data-href="#thank-you-modal">Book Now</button>
 					</div>
 					<!-- /.card -->
 
 					<div class="card activities__card">
 						<img src="img/activity-2.jpg" alt="Gymkhana club golf course" class="image card__image" />
 						<h3 class="card__title">Gymkhana club golf course</h3>
-						<button class="card__button">Book Now</button>
+						<button class="card__button" data-toggle="modal" data-href="#booking-modal">Book Now</button>
 					</div>
 					<!-- /.card -->
 
@@ -343,7 +343,7 @@
 						<h3 class="card__title">
 							Tamarind falls hiking trip&#160;-&#160;full day
 						</h3>
-						<button class="card__button">Book Now</button>
+						<button class="card__button" data-toggle="modal" data-href="#booking-modal">Book Now</button>
 					</div>
 					<!-- /.card -->
 
@@ -355,7 +355,7 @@
 							class="image card__image"
 						/>
 						<h3 class="card__title">The blue marine discovery quest</h3>
-						<button class="card__button">Book Now</button>
+						<button class="card__button" data-toggle="modal" data-href="#booking-modal">Book Now</button>
 					</div>
 					<!-- /.card -->
 				</div>
@@ -364,7 +364,7 @@
 			<!-- /.container -->
 		</section>
 
-		<section class="footer">
+		<footer class="footer">
 			<div class="container">
 				<div class="footer-wrapper">
 					<img class="image footer__logo" src="img/vertical-logo.svg" alt="Logo: Best Tour Plan" />
@@ -495,12 +495,12 @@
 					<!-- /.footer__contact-details -->
 					<div class="footer__contact-form">
 						<h3 class="footer__title footer__title_mb-30">Send us a message</h3>
-						<form action="php/send.php" method="POST" class="footer__form">
+						<form action="php/send.php" method="POST" class="form footer__form">
 							<input type="text" name="name" class="input footer__input" placeholder="Your Full Name*" />
 							<input type="text" name="phone" class="input footer__input" placeholder="Phone Number*" />
-							<textarea name="message" class="footer__textarea" placeholder="Message"></textarea>
+							<textarea name="message" class="textarea footer__textarea" placeholder="Message"></textarea>
 							<button class="button footer__button">Send</button>
-							<span class="footer__form-info">* Required Fields</span>
+							<span class="form-info footer__form-info">* Required Fields</span>
 						</form>
 					</div>
 					<!-- /.footer__contact-form -->
@@ -522,9 +522,43 @@
 				<!-- /.footer__info -->
 			</div>
 			<!-- /.container -->
-		</section>
+		</footer>
 
-		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+		<div class="modal" id="booking-modal">
+			<div class="modal__overlay"></div>
+			<!-- /.modal__overlay -->
+			<div class="modal__dialog">
+				<a href="#" class="modal__close">
+					<img src="img/close.svg" alt="Icon: close">
+				</a>
+				<h3 class="modal__title modal__title_mb-30">Send us a message</h3>
+				<form action="php/send.php" method="POST" class="form modal__form">
+					<input type="text" name="name" class="input modal__input" placeholder="Your Full Name*" />
+					<input type="text" name="phone" class="input modal__input" placeholder="Phone Number*" />
+					<input type="text" name="email" class="input modal__input" placeholder="Email*" />
+					<textarea name="message" class="textarea modal__textarea" placeholder="Message"></textarea>
+					<button class="button modal__button">Send</button>
+					<span class="form-info modal__form-info">* Required Fields</span>
+				</form>
+			</div>
+			<!-- /.modal__dialog -->
+		</div>
+		<!-- /.modal -->
+
+		<div class="modal" id="thank-you-modal">
+			<div class="modal__overlay"></div>
+			<!-- /.modal__overlay -->
+			<div class="modal__dialog">
+				<a href="#" class="modal__close">
+					<img src="img/close.svg" alt="Icon: close">
+				</a>
+				<h3 class="modal__title modal__title_mb-30">Спасибо</h3>				
+			</div>
+			<!-- /.modal__dialog -->
+		</div>
+		<!-- /.modal -->
+
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 		<script src="js/parallax.min.js"></script>
 		<script src="js/swiper-bundle.min.js"></script>
 		<script src="js/main.js"></script>

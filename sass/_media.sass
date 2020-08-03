@@ -14,7 +14,7 @@
 		&__input
 			flex-basis: 100%
 
-@media (max-width: 992px)
+@media (max-width: 992px) 
 	.container
 		max-width: 700px
 	.logo
@@ -121,6 +121,10 @@
 				grid-row: 4
 		&__info
 			margin-top: 63px
+
+	.modal
+		&__dialog
+			padding: 33px 48px
 
 @media (max-width: 768px)
 	body
@@ -273,7 +277,10 @@
 	.footer
 		&__input
 			flex-basis: 100%
-
+	.modal
+		&__dialog
+			padding: 33px 28px;
+	
 @media (max-width: 700px)
 	.footer
 		padding-top: 69px
@@ -335,6 +342,14 @@
 				flex-direction: column
 			&__text
 				margin-bottom: 10px
+	
+	.modal
+		&__button
+			order: 1
+		&__form
+			&-info
+				flex-basis: 100%
+				margin-bottom: 15px
 
 @media (max-width: 576px)
 	.logo
@@ -380,8 +395,13 @@
 		width: 100%
 		// min-width: 280px
 
-				
-	
+	.modal
+		&__dialog
+			width: 80%
+		&__title
+			font-size: 16px
+		&__button
+			width: 100%
 
 @media (max-width: 400px)
 	.hotel
