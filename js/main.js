@@ -79,4 +79,65 @@ $(document).ready(() => {
 		$(targetModal).find(".modal__overlay").addClass("modal__overlay_visible")
 		$(targetModal).find(".modal__dialog").addClass("modal__dialog_visible")
 	}
+
+	//обработка форм
+	// $(".modal__form").each(function () {
+	// 	$(this).validate({
+	// 		errorClass: "modal__error",
+	// 		rules: {
+	// 			name: {
+	// 				required: true,
+	// 				minlength: 2,
+	// 			},
+	// 			email: {
+	// 				required: true,
+	// 				email: true,
+	// 			},
+	// 			phone: "required",
+	// 		},
+	// 		messages: {
+	// 			name: {
+	// 				required: "Please specify your name",
+	// 				minlength: "The name is too short",
+	// 			},
+	// 			email: {
+	// 				required: "We need your email address to contact you",
+	// 				email: "Your email address must be in the format of name@domain.com",
+	// 			},
+	// 			phone: {
+	// 				required: "Required field",
+	// 			},
+	// 		},
+	// 	})
+	// })
+
+	$(".form").each(function () {
+		$(this).validate({
+			errorClass: "form__error",
+			rules: {
+				name: {
+					required: true,
+					minlength: 2,
+				},
+				email: {
+					required: true,
+					email: true,
+				},
+				phone: "required",
+			},
+			messages: {
+				name: {
+					required: "Please specify your name",
+					minlength: "The name is too short",
+				},
+				email: {
+					required: "Required field",
+					email: "invalid email",
+				},
+				phone: {
+					required: "Required field",
+				},
+			},
+		})
+	})
 })
