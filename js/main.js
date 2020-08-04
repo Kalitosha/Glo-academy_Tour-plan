@@ -81,35 +81,23 @@ $(document).ready(() => {
 	}
 
 	//обработка форм
-	// $(".modal__form").each(function () {
-	// 	$(this).validate({
-	// 		errorClass: "modal__error",
-	// 		rules: {
-	// 			name: {
-	// 				required: true,
-	// 				minlength: 2,
-	// 			},
-	// 			email: {
-	// 				required: true,
-	// 				email: true,
-	// 			},
-	// 			phone: "required",
-	// 		},
-	// 		messages: {
-	// 			name: {
-	// 				required: "Please specify your name",
-	// 				minlength: "The name is too short",
-	// 			},
-	// 			email: {
-	// 				required: "We need your email address to contact you",
-	// 				email: "Your email address must be in the format of name@domain.com",
-	// 			},
-	// 			phone: {
-	// 				required: "Required field",
-	// 			},
-	// 		},
-	// 	})
-	// })
+	/*$(".newsletter__subscribe").each(function () {
+		$(this).validate({
+			errorClass: "newsletter__error",
+			rules: {
+				newsletter_email: {
+					required: true,
+					email: true,
+				},
+			},
+			messages: {
+				email: {
+					required: "We need your email address to contact you",
+					email: "Your email address must be in the format of name@domain.com",
+				},
+			},
+		})
+	})*/
 
 	$(".form").each(function () {
 		$(this).validate({
@@ -123,6 +111,10 @@ $(document).ready(() => {
 					required: true,
 					email: true,
 				},
+				newsletter_email: {
+					required: true,
+					email: true,
+				},
 				phone: "required",
 			},
 			messages: {
@@ -131,6 +123,10 @@ $(document).ready(() => {
 					minlength: "The name is too short",
 				},
 				email: {
+					required: "Required field",
+					email: "invalid email",
+				},
+				newsletter_email: {
 					required: "Required field",
 					email: "invalid email",
 				},

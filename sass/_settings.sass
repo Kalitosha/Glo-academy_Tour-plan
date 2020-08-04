@@ -60,14 +60,19 @@ body
   flex-wrap: wrap
   &__error    
     color: $primary
+  &__error[for=name], &__error[for=phone], &__error[for=email]
+    padding-top: 4px
+    position: absolute
+    bottom: 4px
+    left: 2px
+    font-size: 10px
 
-#name-error, #phone-error, #email-error
-  padding-top: 1px
-  position: absolute
-  bottom: 4px
-  left: 2px
-  font-size: 10px
-  font-weight: bold
+// #name-error, #phone-error, #email-error
+//   padding-top: 3px
+//   position: absolute
+//   bottom: 4px
+//   left: 2px
+//   font-size: 10px
   
 .form-info
   font-style: normal

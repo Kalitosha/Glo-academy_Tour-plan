@@ -129,13 +129,12 @@ body {
   color: #EC1F46;
 }
 
-#name-error, #phone-error, #email-error {
-  padding-top: 1px;
+.form__error[for=name], .form__error[for=phone], .form__error[for=email] {
+  padding-top: 4px;
   position: absolute;
   bottom: 4px;
   left: 2px;
   font-size: 10px;
-  font-weight: bold;
 }
 
 .form-info {
@@ -1034,8 +1033,6 @@ template {
   position: relative;
   width: 350px;
   height: 55px;
-  border-radius: 4px;
-  overflow: hidden;
 }
 
 .newsletter .subscribe__input {
@@ -1049,10 +1046,8 @@ template {
   font-weight: 300;
   font-size: 14px;
   line-height: 18px;
-}
-
-.newsletter .subscribe__input-group {
-  position: relative;
+  border-radius: 4px;
+  overflow: hidden;
 }
 
 .newsletter .subscribe__input::-webkit-input-placeholder {
@@ -1084,6 +1079,18 @@ template {
   font-size: 12px;
   line-height: 15px;
   cursor: pointer;
+  overflow: hidden;
+  border-top-right-radius: 4px;
+  border-bottom-right-radius: 4px;
+}
+
+.form__error[for=newsletter_email] {
+  position: absolute;
+  top: 57px;
+  bottom: 4px;
+  left: 2px;
+  font-size: 10px;
+  color: #EC1F46;
 }
 
 .reviews {
