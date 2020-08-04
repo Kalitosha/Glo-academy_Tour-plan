@@ -80,24 +80,22 @@ $(document).ready(() => {
 		$(targetModal).find(".modal__dialog").addClass("modal__dialog_visible")
 	}
 
-	//обработка форм
-	/*$(".newsletter__subscribe").each(function () {
-		$(this).validate({
-			errorClass: "newsletter__error",
-			rules: {
-				newsletter_email: {
-					required: true,
-					email: true,
-				},
-			},
-			messages: {
-				email: {
-					required: "We need your email address to contact you",
-					email: "Your email address must be in the format of name@domain.com",
-				},
-			},
-		})
+	// валидация
+	// $(".phone_with_ddd").mask("0(000) 000-00-00")
+	$("[name=phone]").mask("0(000) 000-00-00")
+
+	/*$("[name = newsletter_email]").mask("A", {
+		translation: {
+			A: { pattern: /[\w@\-.+]/, recursive: true },
+		},
 	})*/
+	// $('.alpha-no-spaces').mask("A", {
+	// 	translation: {
+	// 		"A": { pattern: /[\w@\-.+]/, recursive: true }
+	// 	}
+	// });
+
+	//обработка форм
 
 	$(".form").each(function () {
 		$(this).validate({
@@ -115,7 +113,10 @@ $(document).ready(() => {
 					required: true,
 					email: true,
 				},
-				phone: "required",
+				phone: {
+					required: true,
+					minlength: 10,
+				},
 			},
 			messages: {
 				name: {
@@ -124,14 +125,15 @@ $(document).ready(() => {
 				},
 				email: {
 					required: "Required field",
-					email: "invalid email",
+					email: "Incorrect format (expected name@domain.com)",
 				},
 				newsletter_email: {
 					required: "Required field",
-					email: "invalid email",
+					email: "Incorrect format (expected name@domain.com)",
 				},
 				phone: {
 					required: "Required field",
+					minlength: "The phone number is too short",
 				},
 			},
 		})
