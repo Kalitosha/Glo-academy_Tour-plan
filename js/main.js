@@ -49,7 +49,6 @@ $(document).ready(() => {
 	})
 
 	function changeImage(pathImg) {
-		// console.log("click:", pathImg)
 		document.querySelector(".menu-button__image").src = pathImg
 	}
 
@@ -59,13 +58,11 @@ $(document).ready(() => {
 	$(document).keyup((e) => {
 		if (e.key === "Escape") {
 			console.log("Escape")
-			// escape key maps to keycode `27`
 			closeModal(e)
 		}
 	})
 
 	function closeModal(event) {
-		// console.log("closeModal:")
 		event.preventDefault()
 		$(".modal__overlay").removeClass("modal__overlay_visible")
 		$(".modal__dialog").removeClass("modal__dialog_visible")
@@ -76,14 +73,13 @@ $(document).ready(() => {
 
 	function openModal() {
 		let targetModal = $(this).attr("data-href")
-		// console.log("openModal: ", targetModal)
 
 		$(targetModal).find(".modal__overlay").addClass("modal__overlay_visible")
 		$(targetModal).find(".modal__dialog").addClass("modal__dialog_visible")
 	}
 
 	// валидация
-	$("[name=phone]").mask("0(000) 000-00-00")
+	$("[name=phone]").mask("+7(000) 000-00-00")
 
 	//обработка форм
 	$(".form").each(function () {
@@ -104,7 +100,7 @@ $(document).ready(() => {
 				},
 				phone: {
 					required: true,
-					minlength: 10,
+					minlength: 17,
 				},
 			},
 			messages: {
@@ -129,7 +125,7 @@ $(document).ready(() => {
 	})
 
 	// карты
-	console.log("src: ", $(".map__frame").attr("src"))
+	// console.log("src: ", $(".map__frame").attr("src"))
 	$(".map__frame").attr(
 		"src",
 		"https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d35768.629794727676!2d126.9271982856096!3d37.589681673921!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x357c986a45705bb5%3A0x224be1d558aa33!2sSwiss%20Grand%20Hotel!5e0!3m2!1sru!2sru!4v1595847140951!5m2!1sru!2sru"
