@@ -8,6 +8,7 @@
 		<link rel="icon" href="favicon.ico" type="image/x-icon" />
 		<link rel="preconnect" href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;800&display=swap" />
 		<link rel="stylesheet" href="css/swiper-bundle.min.css" />
+		<link rel="stylesheet" href="css/aos.css" />
 		<link rel="stylesheet" href="css/slyle.css" />
 	</head>
 	<body>
@@ -103,15 +104,15 @@
 					<div class="hotel-info__text">
 						<div class="hotel-wrapper">
 							<div class="stars">
-								<img src="img/star.svg" alt="Icon: Star" class="image star" />
-								<img src="img/star.svg" alt="Icon: Star" class="image star" />
-								<img src="img/star.svg" alt="Icon: Star" class="image star" />
-								<img src="img/star.svg" alt="Icon: Star" class="image star" />
-								<img src="img/star.svg" alt="Icon: Star" class="image star" />
+								<img src="img/star.svg" alt="Icon: Star" class="image star" data-aos="fade-down" data-aos-duration="400" />
+								<img src="img/star.svg" alt="Icon: Star" class="image star" data-aos="fade-down" data-aos-duration="500" />
+								<img src="img/star.svg" alt="Icon: Star" class="image star" data-aos="fade-down" data-aos-duration="600" />
+								<img src="img/star.svg" alt="Icon: Star" class="image star" data-aos="fade-down" data-aos-duration="700" />
+								<img src="img/star.svg" alt="Icon: Star" class="image star" data-aos="fade-down" data-aos-duration="800" />
 							</div>
 							<!-- /.stars -->
 							<h1 class="hotel-name hotel-info__name">GRAND HILTON HOTEL</h1>
-							<span class="offer hotel-info__offer">Flash Offer</span>
+							<span class="offer hotel-info__offer" data-aos="fade-down">Flash Offer</span>
 						</div>
 						<!-- /.hotel-wrapper -->
 
@@ -213,12 +214,12 @@
 
 		<section class="newsletter parallax-window" data-depth="0.5" data-parallax="scroll" data-image-src="img/newsletter-bg.jpg">
 			<div class="newsletter-wrapper">
-				<h2 class="newsletter-title newsletter__title">
+				<h2 class="newsletter-title newsletter__title" data-aos="fade-right">
 					subscribe to our
 					<span class="newsletter-title__strong">Newsletter</span>
 				</h2>
 
-				<form action="php/send.php" method="POST" class="subscribe form newsletter__subscribe">
+				<form action="php/send.php" method="POST" class="subscribe form newsletter__subscribe" data-aos="fade-left">
 					<!-- <div class="newsletter__input-group"> -->
 					<input type="email" name="newsletter_email" class="subscribe__input" placeholder="Your email address" required />
 					<!-- </div> -->
@@ -325,21 +326,21 @@
 			<div class="container">
 				<h2 class="activities__title">Other activities</h2>
 				<div class="activities-wrapper">
-					<div class="card activities__card">
+					<div class="card activities__card" data-aos="fade-right" data-aos-duration="1000">
 						<img src="img/activity-1.jpg" alt="The curious corner of chamarel" class="image card__image" />
 						<h3 class="card__title">The curious corner of chamarel</h3>
 						<button class="card__button" data-toggle="modal" data-href="#thank-you-modal">Book Now</button>
 					</div>
 					<!-- /.card -->
 
-					<div class="card activities__card">
+					<div class="card activities__card" data-aos="fade-right" data-aos-duration="600">
 						<img src="img/activity-2.jpg" alt="Gymkhana club golf course" class="image card__image" />
 						<h3 class="card__title">Gymkhana club golf course</h3>
 						<button class="card__button" data-toggle="modal" data-href="#booking-modal">Book Now</button>
 					</div>
 					<!-- /.card -->
 
-					<div class="card activities__card">
+					<div class="card activities__card" data-aos="fade-left" data-aos-duration="600">
 						<img src="img/activity-3.jpg" alt="Tamarind falls hiking trip - full day" class="image card__image" />
 						<h3 class="card__title">
 							Tamarind falls hiking trip&#160;-&#160;full day
@@ -348,7 +349,7 @@
 					</div>
 					<!-- /.card -->
 
-					<div class="card activities__card">
+					<div class="card activities__card" data-aos="fade-left" data-aos-duration="1000">
 						<img
 							src="img/activity-4.jpg"
 							alt="The blue marine discovery
@@ -368,7 +369,7 @@
 		<footer class="footer">
 			<div class="container">
 				<div class="footer-wrapper">
-					<img class="image footer__logo" src="img/vertical-logo.svg" alt="Logo: Best Tour Plan" />
+					<img class="image footer__logo" src="img/vertical-logo.svg" alt="Logo: Best Tour Plan" data-aos="flip-left"" />
 
 					<div class="footer__list footer__categories">
 						<h3 class="footer__title">All categories</h3>
@@ -575,6 +576,7 @@
 
 		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 		<script src="js/swiper-bundle.min.js"></script>
+		<script src="js/aos.js"></script>
 		<script src="js/parallax.min.js"></script>
 		<script src="js/jquery.validate.min.js"></script>
 		<script src="js/jquery.mask.min.js"></script>

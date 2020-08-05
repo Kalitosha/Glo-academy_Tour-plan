@@ -27,6 +27,8 @@ $(document).ready(() => {
 		},
 	})
 
+	AOS.init()
+
 	// параллакс в newsletter
 	$(".parallax-window").parallax({
 		imageSrc: "img/newsletter-bg.jpg",
@@ -84,7 +86,6 @@ $(document).ready(() => {
 	$("[name=phone]").mask("0(000) 000-00-00")
 
 	//обработка форм
-
 	$(".form").each(function () {
 		$(this).validate({
 			errorClass: "form__error",
