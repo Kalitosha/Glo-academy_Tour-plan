@@ -1,0 +1,126 @@
+.packages
+	padding: 40px 0 70px 0
+	&__title
+		display: block
+		max-width: 100%
+		// width: 960px
+		font-style: normal 
+		font-weight: bold 
+		font-size: 36px 
+		line-height: 45px 
+		text-align: center 
+		text-transform: uppercase
+		margin: 0px auto 70px
+	&-wrapper
+		display: grid
+		grid-template-columns: repeat(3, 1fr)
+		grid-template-rows: repeat(2, 1fr)
+		grid-gap: 30px
+	&__item
+		background-color: $dark
+		width: 100%
+		height: 500px
+		&_2x
+			max-width: 730px
+			grid-column: span 2
+			//grid-column-start: 1
+			display: flex
+
+		
+.item	
+	border-radius: 8px
+	overflow: hidden
+	&__photo
+		position: relative
+		width: 100%
+		height: 250px
+		height: 50%
+		&_2x
+			height: 500px
+			// height: 100%
+			max-width: 366px
+			width: 100%
+	&__image
+		width: 100%
+		height: 100%
+		margin: 0
+	&__offer
+		position: absolute
+		left: 0
+		top: 26px
+		border-radius: 0px 4px 4px 0px
+		background-color: $primary
+		color: $light
+		font-style: normal
+		font-weight: 600
+		font-size: 8px
+		line-height: 10px
+		padding: 4px 9px
+	&__about
+		display: flex
+		flex-direction: column
+		justify-content: space-between
+		height: 50%
+		padding: 30px 21px 25px 32px
+		&_2x
+			height: 500px
+			width: 89%
+			max-width: 364px
+			padding: 46px 21px 30px 43px
+	&__paragraph
+		font-style: normal
+		font-weight: normal
+		font-size: 14px
+		line-height: 160.6%
+		color: $light
+	&__name
+		margin: 0 0 18px 0
+		font-style: normal
+		font-weight: bold
+		font-size: 18px
+		line-height: 23px
+		color: $light
+		&_2x
+			margin: 5px 0 0 0
+	&__description
+		color: $light
+		font-weight: normal
+		font-size: 12px
+		line-height: 15px
+	&__icon
+		margin-right: 15px
+	&__text
+		display: flex
+		align-items: center
+		justify-content: flex-start
+		margin-bottom: 8px
+		font-weight: normal 
+		font-size: 12px 
+		line-height: 16px 
+	&-price-wrapper
+		display: flex
+		justify-content: space-between
+	&__price
+		display: flex
+		color: $light
+		flex-wrap: wrap
+	&__oldpricetag
+		color: inherit
+		width: 100%
+		font-weight: normal
+		font-size: 14px
+		line-height: 18px
+		text-decoration-line: line-through
+	&__pricetag
+		color: inherit
+		width: 100%
+		font-weight: bold
+		font-size: 24px
+		line-height: 30px
+	&__button
+		min-width: 120px
+		min-height: 40px
+		padding: 10px 26px
+		font-weight: 600
+		font-size: 14px
+		line-height: 19px
