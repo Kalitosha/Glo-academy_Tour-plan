@@ -80,6 +80,7 @@ $(document).ready(() => {
 
 	// валидация
 	$("[name=phone]").mask("+7(000) 000-00-00")
+	$("[name=footer_phone]").mask("+7(000) 000-00-00")
 
 	//обработка форм
 	$(".form").each(function () {

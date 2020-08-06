@@ -10,18 +10,24 @@ $phone = $_POST['phone'];
 $message = $_POST['message'];
 $email = $_POST['email'];*/
 //var_dump($_POST['email']);
+$footer_name;
+$footer_phone;
+$newsletter_email;
 
-if (isset($_POST['email'])) {
-	sendEmail($_POST['email']);
+if (isset($_POST['newsletter_email'])) {
+	sendEmail($_POST['newsletter_email']);
+} else if (isset($_POST['footer_name']) && isset($_POST['footer_phone'])) {
+	sendFooterForm($_POST['footer_name'], $_POST['footer_phone'], $_POST['message']);
 } else {
-	sendFooterForm($_POST['name'], $_POST['phone'], $_POST['message']);
+	sendModalForm($_POST['name'], $_POST['email'], $_POST['phone'], $_POST['message']);
 }
+
 
 function sendEmail($email)
 {
-	$title = "Новый пользователь от Best Tour Plan";
+	$title = "Новый пользователь Best Tour Plan";
 	$body = "
-	<h2>Новое обращение</h2>
+	<h2>Подписка на новости</h2>
 	<b>Почта:</b> $email<br>
 	";
 
@@ -39,6 +45,20 @@ function sendFooterForm($name, $phone, $message)
 	<b>Телефон:</b> $phone<br><br>
 	<b>Сообщение:</b><br>$message
 	";
+
+	send($title, $body, "Location: ../thank-you.html");
+}
+
+function sendModalForm($name, $email, $phone, $message)
+{
+	$title = "Новое обращение из модального окна Best Tour Plan";
+	$body = "
+		<h2>Новое обращение</h2>
+		<b>Имя:</b> $name<br>
+		<b>Почта:</b> $email<br><br>
+		<b>Телефон:</b> $phone<br><br>
+		<b>Сообщение:</b><br>$message
+		";
 
 	send($title, $body, "Location: ../thank-you.html");
 }
