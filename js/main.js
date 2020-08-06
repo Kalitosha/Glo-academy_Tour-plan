@@ -125,7 +125,7 @@ $(document).ready(() => {
 	})
 
 	// карты
-	console.log("map: ", $(".map"))
+	// console.log("map: ", $(".map"))
 	$(".hotel-about").on("mousemove", () => {
 		console.log("src: ", $(".map__frame").attr("src"))
 

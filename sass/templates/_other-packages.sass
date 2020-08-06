@@ -48,6 +48,8 @@
 		position: absolute
 		left: 0
 		top: 26px
+		max-width: 61px
+		min-height: 18px
 		border-radius: 0px 4px 4px 0px
 		background-color: $primary
 		color: $light
@@ -56,6 +58,14 @@
 		font-size: 8px
 		line-height: 10px
 		padding: 4px 9px
+		text-align: center
+		&_2x
+			max-width: 95px
+			min-height: 30px
+			font-size: 12px
+			line-height: 15px
+			padding: 7px 11px
+
 	&__about
 		display: flex
 		flex-direction: column
@@ -64,7 +74,7 @@
 		padding: 30px 21px 25px 32px
 		&_2x
 			height: 500px
-			width: 89%
+			width: 90%
 			max-width: 364px
 			padding: 46px 21px 30px 43px
 	&__paragraph
