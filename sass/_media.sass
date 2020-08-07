@@ -20,6 +20,12 @@
 				flex-basis: 100%
 
 @media (max-width: 992px) 
+	// a, button
+	// 	cursor: default
+	a:hover
+		text-shadow: none
+	
+
 	.container
 		max-width: 700px
 	.logo
@@ -39,6 +45,8 @@
 	.search
 		&__input
 			min-width: 340px
+		&__button
+			// cursor: default
 	
 	.hotel
 		&-grid
@@ -140,7 +148,7 @@
 		&__dialog
 			padding: 33px 48px
 
-@media (max-width: 768px)
+@media (max-width: 767px)
 	body
 		padding-top: 78px
 	.container
@@ -406,7 +414,7 @@
 				flex-basis: 100%
 				margin-bottom: 15px
 
-@media (max-width: 576px)
+@media (max-width: 600px)
 	.logo
 		width: 99px
 
